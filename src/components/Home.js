@@ -2,8 +2,9 @@ import { Typography } from "@material-ui/core";
 import React, { Component } from "react";
 import Astronaut from "../ills/astronaut.svg";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 import Typed from "react-typed";
-
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 export class Home extends Component {
   render() {
     const name = "<Ofir/>";
@@ -33,6 +34,12 @@ export class Home extends Component {
           </Grid>
           <Grid item xs={12} sm={6} className="homeIllus">
             <img alt="astronaut" className="astronaut" src={Astronaut} />
+          </Grid>
+          <Grid item xs={12} className="scrollToSee">
+            <Typography>Learn more about what I do</Typography>
+            <Button href="#about">
+              <ExpandMoreIcon style={{ color: "#00b0ff" }} fontSize="large" />
+            </Button>
           </Grid>
         </Grid>
       </section>

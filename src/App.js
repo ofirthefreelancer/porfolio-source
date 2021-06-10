@@ -89,7 +89,7 @@ function App() {
             />
             <Stack bgColor={appTheme.aboutBg} />
             <Contact />
-            <Footer />
+            <Footer bgColor={appTheme.footerBg} />
           </ThemeProvider>
         </div>
       )}

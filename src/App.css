@@ -266,3 +266,27 @@ a {
   align-items: center;
   width: 100%;
 }
+.smIcon {
+  color: white;
+  border-radius: 50%;
+  margin: 0 0.2rem;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+
+  border: 2px solid rgba(251, 151, 151, 0.3);
+}
+.smIcon:hover {
+  transition: all 0.25s linear;
+  background-color: rgba(0, 221, 221, 0.89);
+}
+.smIconsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+/*polygon - 00b0ff*/

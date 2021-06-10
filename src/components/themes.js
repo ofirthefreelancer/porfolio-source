@@ -11,6 +11,8 @@ export const lightTheme = createMuiTheme({
     headerColor: "initial",
   },
   aboutBg: "#f9f9f9",
+  stackBg: "#f9f9f9",
+  footerBg: "#f9f9f9",
   palette: {
     type: "light",
     primary: {
