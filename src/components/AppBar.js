@@ -39,7 +39,9 @@ export default function ButtonAppBar() {
               <Button href="#work" color="inherit" size="large">
                 Latest Work
               </Button>
-
+              <Button href="#skills" color="inherit" size="large">
+                Skills
+              </Button>
               <Button href="#contact" color="inherit" size="large">
                 Contact
               </Button>

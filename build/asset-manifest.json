@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.289b45bf.chunk.css",
+    "main.js": "/static/js/main.0c263456.chunk.js",
+    "main.js.map": "/static/js/main.0c263456.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3ee425cf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3ee425cf.js.map",
+    "static/js/2.78129290.chunk.js": "/static/js/2.78129290.chunk.js",
+    "static/js/2.78129290.chunk.js.map": "/static/js/2.78129290.chunk.js.map",
+    "static/js/3.cf5b80c8.chunk.js": "/static/js/3.cf5b80c8.chunk.js",
+    "static/js/3.cf5b80c8.chunk.js.map": "/static/js/3.cf5b80c8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.289b45bf.chunk.css.map": "/static/css/main.289b45bf.chunk.css.map",
+    "static/js/2.78129290.chunk.js.LICENSE.txt": "/static/js/2.78129290.chunk.js.LICENSE.txt",
+    "static/media/astronaut.77c205ff.svg": "/static/media/astronaut.77c205ff.svg",
+    "static/media/bianale.c424a34a.png": "/static/media/bianale.c424a34a.png",
+    "static/media/monster.a9737257.svg": "/static/media/monster.a9737257.svg",
+    "static/media/paredon.afb7e361.png": "/static/media/paredon.afb7e361.png",
+    "static/media/sit.46d508a3.svg": "/static/media/sit.46d508a3.svg",
+    "static/media/sitmobile.e07384a0.svg": "/static/media/sitmobile.e07384a0.svg",
+    "static/media/space.ca70656d.png": "/static/media/space.ca70656d.png",
+    "static/media/taken.99296b85.svg": "/static/media/taken.99296b85.svg",
+    "static/media/takenmobile.eb266a59.svg": "/static/media/takenmobile.eb266a59.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ee425cf.js",
+    "static/js/2.78129290.chunk.js",
+    "static/css/main.289b45bf.chunk.css",
+    "static/js/main.0c263456.chunk.js"
+  ]
+}

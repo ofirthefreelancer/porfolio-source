@@ -22,11 +22,11 @@ export class Home extends Component {
               <Typed
                 strings={[
                   "Nice to meet you (:",
-                  "I am a web developer",
+                  "I design, develop, and create",
                   "Specializing in React.",
                 ]}
                 typeSpeed={100}
-                backSpeed={110}
+                backSpeed={60}
                 loop
               ></Typed>
             </Typography>

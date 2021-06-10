@@ -3,6 +3,7 @@ import { useState } from "react";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
+import SentimentSatisfiedAltIcon from "@material-ui/icons/SentimentSatisfiedAlt";
 
 import Hidden from "@material-ui/core/Hidden";
 import Bounce from "react-reveal/Bounce";
@@ -12,6 +13,7 @@ import contactIlluMobile from "../ills/sitmobile.svg";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { CircularProgress } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -39,15 +41,19 @@ export default function Contact() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const [message, setMessage] = useState("");
 
   const classes = useStyles();
   function sumbitted(event) {
-    setError(false);
     event.preventDefault();
+    setError(false);
     if (name !== "" && lastName !== "" && email !== "" && message !== "") {
-      setSubmitted(true);
+      setLoading(true);
+      setTimeout(() => {
+        setSubmitted(true);
+      }, 2000);
     } else {
       setError(true);
     }
@@ -138,9 +144,18 @@ export default function Contact() {
                       type="submit"
                       variant="outlined"
                       color="default"
+                      disabled={loading}
                       className={classes.submit}
                     >
-                      Send
+                      {loading && (
+                        <CircularProgress
+                          style={{
+                            width: "20px",
+                            height: "20px",
+                          }}
+                        />
+                      )}
+                      {!loading && "Send"}
                     </Button>
                     {error && (
                       <Typography>Some of the fields are missing!</Typography>
@@ -149,8 +164,18 @@ export default function Contact() {
                 </Bounce>
               )}
               {submitted && (
-                <div>
-                  {" "}
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "column",
+                  }}
+                >
+                  <SentimentSatisfiedAltIcon
+                    fontSize="large"
+                    style={{ color: "mediumseagreen" }}
+                  />
+
                   <Typography variant="h5">
                     Thank you , form has been submitted!
                   </Typography>

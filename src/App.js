@@ -7,14 +7,18 @@ import Contact from "./components/Contact";
 import DarkToggler from "./components/DarkToggler";
 import { lightTheme, darkTheme } from "./components/themes";
 import ScrollToTop from "react-scroll-to-top";
-
+import Stack from "./components/Stack";
+import Snackbar from "@material-ui/core/Snackbar";
+import Alert from "@material-ui/lab/Alert";
 import Work from "./components/Work";
 import AppBar from "./components/AppBar";
+import Fade from "@material-ui/core/Fade";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/LoadingScreen";
 function App() {
   const [appTheme, setAppTheme] = useState(lightTheme);
+  const [alertOpen, setAlertOpen] = useState(true);
 
   const [progress, setProgress] = React.useState(0);
 
@@ -58,6 +62,24 @@ function App() {
 
           <ThemeProvider theme={{ ...appTheme }}>
             <DarkToggler darkModeHandler={darkHandler} />
+            <div className="alertDiv">
+              <Fade in={true}>
+                <Snackbar
+                  anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+                  open={alertOpen}
+                >
+                  <Alert
+                    onClose={() => {
+                      setAlertOpen(false);
+                    }}
+                    variant="filled"
+                    severity="info"
+                  >
+                    I'm opened to new projects (:
+                  </Alert>
+                </Snackbar>
+              </Fade>
+            </div>
 
             <Home />
             <About bgColor={appTheme.aboutBg} />
@@ -65,6 +87,7 @@ function App() {
               bgColor={appTheme.cards.bgColor}
               headerColor={appTheme.cards.headerColor}
             />
+            <Stack bgColor={appTheme.aboutBg} />
             <Contact />
             <Footer />
           </ThemeProvider>

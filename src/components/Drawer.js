@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import HomeIcon from "@material-ui/icons/Home";
+import StackIcon from "@material-ui/icons/ViewModule";
 import AboutIcon from "@material-ui/icons/Info";
 import WorkIcon from "@material-ui/icons/Work";
 import ContactIcon from "@material-ui/icons/ContactMail";
@@ -42,13 +43,15 @@ export default function TemporaryDrawer() {
 
     setState({ ...state, [anchor]: open });
   };
-  const listarr = ["Home", "About", "Work", "Contact"];
+  const listarr = ["Home", "About", "Work", "Skills", "Contact"];
   function getIcon(text) {
     switch (text) {
       case "Home":
         return <HomeIcon />;
       case "About":
         return <AboutIcon />;
+      case "Skills":
+        return <StackIcon />;
       case "Work":
         return <WorkIcon />;
       case "Contact":
