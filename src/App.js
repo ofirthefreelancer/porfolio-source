@@ -8,6 +8,8 @@ import DarkToggler from "./components/DarkToggler";
 import { lightTheme, darkTheme } from "./components/themes";
 import ScrollToTop from "react-scroll-to-top";
 import Stack from "./components/Stack";
+import Costumers from "./components/Costumers/Costumers";
+
 import Snackbar from "@material-ui/core/Snackbar";
 import Alert from "@material-ui/lab/Alert";
 import Work from "./components/Work";
@@ -88,6 +90,7 @@ function App() {
               headerColor={appTheme.cards.headerColor}
             />
             <Stack bgColor={appTheme.aboutBg} />
+            <Costumers />
             <Contact />
             <Footer bgColor={appTheme.footerBg} />
           </ThemeProvider>

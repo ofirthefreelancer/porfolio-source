@@ -54,7 +54,7 @@ function Footer(props) {
           style={{ backgroundColor: "transparent" }}
           href="https://material-ui.com/"
         >
-          <img src={mui} />
+          <img src={mui} alt="mui" />
         </Button>
       </div>
     </div>
