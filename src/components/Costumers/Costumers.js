@@ -32,7 +32,7 @@ export class Costumers extends Component {
         <Grid container alignItems="center" className="costumersGrid">
           <Grid item xs={2} sm={2}></Grid>
           <Grid item xs={8} sm={8} className="costumersText">
-            <Carousel animation="slide" autoPlay="false">
+            <Carousel animation="slide" autoPlay={false} showArrows={false}>
               {costumersList.map((costumer) => {
                 return (
                   <Costumer
