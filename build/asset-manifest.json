@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.300207c2.chunk.css",
-    "main.js": "/static/js/main.9cd47103.chunk.js",
-    "main.js.map": "/static/js/main.9cd47103.chunk.js.map",
+    "main.css": "/static/css/main.4c578f94.chunk.css",
+    "main.js": "/static/js/main.67dda944.chunk.js",
+    "main.js.map": "/static/js/main.67dda944.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.635610e7.js",
     "runtime-main.js.map": "/static/js/runtime-main.635610e7.js.map",
     "static/js/2.223ef557.chunk.js": "/static/js/2.223ef557.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.36a4ef61.chunk.js": "/static/js/3.36a4ef61.chunk.js",
     "static/js/3.36a4ef61.chunk.js.map": "/static/js/3.36a4ef61.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.300207c2.chunk.css.map": "/static/css/main.300207c2.chunk.css.map",
+    "static/css/main.4c578f94.chunk.css.map": "/static/css/main.4c578f94.chunk.css.map",
     "static/js/2.223ef557.chunk.js.LICENSE.txt": "/static/js/2.223ef557.chunk.js.LICENSE.txt",
     "static/media/alon.4a1cd76d.jpg": "/static/media/alon.4a1cd76d.jpg",
     "static/media/astronaut.77c205ff.svg": "/static/media/astronaut.77c205ff.svg",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.635610e7.js",
     "static/js/2.223ef557.chunk.js",
-    "static/css/main.300207c2.chunk.css",
-    "static/js/main.9cd47103.chunk.js"
+    "static/css/main.4c578f94.chunk.css",
+    "static/js/main.67dda944.chunk.js"
   ]
 }
