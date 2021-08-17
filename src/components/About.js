@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
-
+import Resume from "../Resume.pdf";
 import monster from "../ills/monster.svg";
 
 import Grid from "@material-ui/core/Grid";
@@ -21,6 +21,15 @@ function About(props) {
             <br /> I work 100% remotely and when i'm not coding you can find me
             <br /> surfing around the world and exploring nature.
             <br /> Let's make crazy ideas into reality.
+            <br />
+            <a
+              style={{ textDecoration: "underLine", color: "grey" }}
+              href={Resume}
+              target="_blank"
+              rel="noreferrer"
+            >
+              My Resume
+            </a>
           </Typography>
         </Grid>
       </Grid>
